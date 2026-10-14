@@ -39,7 +39,7 @@ SIREN 934 572 041 · SIRET 934 572 041 00010 · RCS Paris · TVA FR05934572041 �
 
 ## Публикация
 GitHub Pages, репозиторий `1classe-bit/kfs-site` (отдельный аккаунт GitHub для KFS, не личный `dkxr512-oss`).
-Домен `kfs-vtc.fr` (GoDaddy) — файл `CNAME` в корне, DNS-записи в README.md. Выкатить = `git push` в `main`.
+Домен `kfs-vtc.pro` (куплен на Vercel, там же DNS) — файл `CNAME` в корне, DNS-записи в README.md. Выкатить = `git push` в `main`.
 В gh подключены оба аккаунта; remote указан с логином `1classe-bit@`, поэтому push идёт от нужного аккаунта
 независимо от того, какой активен в gh.
 

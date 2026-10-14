@@ -13,10 +13,12 @@ python3 -m http.server 8000
 ## Публикация
 
 - Хостинг: GitHub Pages, репозиторий `1classe-bit/kfs-site` (ветка `main`, корень).
-- Домен: `kfs-vtc.fr`, куплен на GoDaddy. Файл `CNAME` в корне привязывает его к Pages — не удалять.
+- Домен: `kfs-vtc.pro`, куплен на Vercel (14.10.2026, автопродление). Файл `CNAME` в корне привязывает его к Pages — не удалять.
 - Обновить сайт = закоммитить и `git push` в `main`. Через 1–2 минуты изменения на сайте.
 
-## DNS в GoDaddy (My Products → Domains → kfs-vtc.fr → DNS)
+## DNS в Vercel (Domains → kfs-vtc.pro → DNS Records)
+
+Проект в Vercel к домену не подключается — Vercel только держит DNS.
 
 | Тип   | Имя   | Значение                 |
 |-------|-------|--------------------------|
@@ -26,5 +28,5 @@ python3 -m http.server 8000
 | A     | `@`   | `185.199.111.153`        |
 | CNAME | `www` | `1classe-bit.github.io`  |
 
-Старые записи A для `@` (GoDaddy «Parked») и CNAME `www` → `@` удалить.
+Записи CAA (letsencrypt.org и др.), которые Vercel создал сам, не трогать — они разрешают GitHub выпустить сертификат.
 После обновления DNS: Settings → Pages репозитория → «Enforce HTTPS».

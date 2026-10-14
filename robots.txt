@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kfs-vtc.fr/sitemap.xml
+Sitemap: https://kfs-vtc.pro/sitemap.xml
